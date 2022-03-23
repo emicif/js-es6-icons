@@ -27,6 +27,15 @@ function createTeam(element) {
     });
 
 }
+icon = {};
+icon = factory.forEach((element, index, array) => {
+    console.log((factory[index].prefix)+(factory[index].name)); 
+    return icon;
+}  
+);
+factory.push(icon); 
+
+console.log(factory)
 
 function createBox(factory){
     const box = document.createElement('div');
@@ -34,7 +43,7 @@ function createBox(factory){
     box.innerHTML = `
         <div class = "box-icon">
         <img
-                src="${factory.prefix}"
+                src= "${factory.prefix}"
                 alt="${factory.name}"
         />
         <h3>${factory.name}</h3>
@@ -44,30 +53,7 @@ function createBox(factory){
 }
 
 
-/*
-factory.forEach((element, index, array) => {
-    const prefix = createBox(factory[index]);
-    console.log(prefix);
-});
 
-const {prefix, name} = factory;
-*/
-
-
-
-/*
-const prefix = ciao.name;
-console.log(prefix);
-
-function visualizzaPrefixName() { return "prefixName"; }
-factory.prefixName = visualizzaPrefixName;
-var prefixName = factory.prefixName();
-console.log (prefixName)
-*/
-
-factory.forEach((element, index, array) => {
-    console.log((factory[index].prefix)+(factory[index].name));  
-})
 
 
 
