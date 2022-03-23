@@ -13,12 +13,19 @@ const teamContainer = document.querySelector('.team-container'); //ho recuperato
 
 createTeam(factory);
 
-function createTeam(factory) {
+function createTeam(element) {
     teamContainer.innerHTML = '';
+    /*
     for (let i = 0; i < factory.length; i ++) {
         const box = createBox(factory[i]);
         teamContainer.appendChild(box);
     }
+*/
+    factory.forEach((element, index, array) => {
+        const box = createBox(factory[index]);
+            teamContainer.appendChild(box);
+    });
+
 }
 
 function createBox(factory){
