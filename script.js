@@ -43,6 +43,43 @@ function createBox(factory){
     return box;
 }
 
+
+/*
+factory.forEach((element, index, array) => {
+    const prefix = createBox(factory[index]);
+    console.log(prefix);
+});
+
+const {prefix, name} = factory;
+*/
+
+
+
+/*
+const prefix = ciao.name;
+console.log(prefix);
+
+function visualizzaPrefixName() { return "prefixName"; }
+factory.prefixName = visualizzaPrefixName;
+var prefixName = factory.prefixName();
+console.log (prefixName)
+*/
+
+factory.forEach((element, index, array) => {
+    console.log((factory[index].prefix)+(factory[index].name));  
+})
+
+
+
+
+// console.log(teams.nome); // se fosse solo object
+
+// console.log([0]) // mi stampa 0
+
+// console.log(teams[0]); // stampa il primo gruppo di graffe
+
+// console.log((teams[0].nome)); // stampare solo il primo nome 
+
 // {
 //     name: 'cat',
 //     prefix: 'fa-',
