@@ -27,25 +27,17 @@ function createTeam(element) {
     });
 
 }
-icon = {};
-icon = factory.forEach((element, index, array) => {
-    console.log((factory[index].prefix)+(factory[index].name)); 
-    return icon;
-}  
-);
-factory.push(icon); 
 
-console.log(factory)
+
+
 
 function createBox(factory){
     const box = document.createElement('div');
     box.className = "box-card";
     box.innerHTML = `
         <div class = "box-icon">
-        <img
-                src= "${factory.prefix}"
-                alt="${factory.name}"
-        />
+        <i class="fa-solid ${factory.prefix}${factory.name}"></i>
+       
         <h3>${factory.name}</h3>
         </div>
     `;
