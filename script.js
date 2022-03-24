@@ -36,7 +36,7 @@ function createBox(factory){
     box.className = "box-card";
     box.innerHTML = `
         <div class = "box-icon">
-        <i class="fa-solid ${factory.prefix}${factory.name}"></i>
+        <i class="fa-solid ${factory.prefix}${factory.name}" style= "color:${factory.color}"></i>
        
         <h3>${factory.name}</h3>
         </div>
